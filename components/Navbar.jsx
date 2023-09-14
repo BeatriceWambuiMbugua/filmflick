@@ -16,7 +16,7 @@ export default function () {
       setMobileMenuOpen(!isMobileMenuOpen);
     };
   return (
-    <div className="flex justify-around items-center py-10 bg-black">
+    <div className="flex justify-around items-center py-5 bg-black/50">
       <Link href={"/"}>
       <div className="flex gap-8">
         <div className="w-10 h-10 bg-[#BE123C] text-white rounded-full flex items-center justify-center">
