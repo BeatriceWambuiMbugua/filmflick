@@ -1,8 +1,7 @@
 "use client"
-import Card from "@/components/Card";
-import { fetchTop10Movies } from "./api/items/route";
 import Results from "@/components/Results";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { fetchTop10Movies } from "./api/route";
 
 
 
