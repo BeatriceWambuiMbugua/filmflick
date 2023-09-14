@@ -18,14 +18,14 @@ export default function SearchBox() {
         onChange={(e) => setSearch(e.target.value)}
         type="text"
         placeholder="What do you want to watch?"
-        className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-red focus:border-red"
+        className="block w-full p-2 pl-10 text-sm text-white border border-gray-400 bg-transparent rounded-lg focus:outline-none focus:ring-white focus:border-white"
       />
       <button
         type="submit"
         className="absolute inset-y-0 right-0 flex items-center pr-3"
         disabled={!search}
       >
-        <MdOutlineSearch className="w-6 h-6 text-gray-500" />
+        <MdOutlineSearch className="w-6 h-6 text-gray-200" />
       </button>
     </form>
   );
