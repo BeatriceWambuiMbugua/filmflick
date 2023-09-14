@@ -5,8 +5,9 @@ import { FaRegThumbsUp } from "react-icons/fa";
 
 export default function Card({ movie }) {
   return (
+    
     <div
-      className="cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200 group"
+      className="cursor-pointer  sm:m-2 transition-shadow duration-200 group"
       data-testid="movie-card"
     >
       {movie.id && (
@@ -16,13 +17,13 @@ export default function Card({ movie }) {
               movie.backdrop_path || movie.poster_path
             }`}
             width={500}
-            height={300}
+            height={370}
             style={{
               maxWidth: "100%",
               maxHeight: "auto",
             }}
             alt="Image is not found"
-            className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200 h-[350px] object-cover"
+            className=" group-hover:opacity-80 transition-opacity duration-200  object-cover shadow-md w-full h-[450px]"
             placeholder="blur"
             blurDataURL="/spinner.svg"
             data-testid="movie-poster"
