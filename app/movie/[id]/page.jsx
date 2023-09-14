@@ -1,3 +1,4 @@
+import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 import React from "react";
 
@@ -16,6 +17,7 @@ export default async function MoviePage({ params }) {
   const movie = await getMovie(movieId);
   return (
     <div>
+     
       <div className="w-full">
         <div className="p-4 md:p-8 flex flex-col md:flex-row items-center content-center max-w-6xl mx-auto md:space-x-6">
           <Image
@@ -37,17 +39,20 @@ export default async function MoviePage({ params }) {
             <h2 className="text-lg font-bold mb-3" data-testid = "movie-title">
               {movie.title || movie.name}
             </h2>
-            <p className=" mb-3">
-              <span className="font-semibold mr-1" data-testid =  "movie-overview">Overview: </span>{" "}
-              {movie.overview}
+            <p className=" mb-3 font-semibold mr-1">
+            Overview:
+              <span className="font-normal" data-testid =  "movie-overview">  {movie.overview}</span>{" "}
+             
             </p>
-            <p className="mb-3">
-              <span className="font-semibold mr-1" data-testid = "movie-release-date">Date Released: </span>{" "}
-              {movie.release_date || movie.first_air_date}
+            <p className="mb-3 font-semibold mr-1">
+            Date Released:
+              <span className="font-normal" data-testid = "movie-release-date"> {movie.release_date || movie.first_air_date}</span>{" "}
+              
             </p>
-            <p className="mb-3">
-              <span className="font-semibold mr-1" data-testid = "movie-runtime">Runtime: </span>{" "}
-              {movie.runtime} mins
+            <p className="mb-3 font-semibold mr-1">
+            Runtime: 
+              <span className="font-normal" data-testid = "movie-runtime"> {movie.runtime}</span>{" "}
+              mins
             </p>
           </div>
         </div>
