@@ -5,6 +5,8 @@ import {BiMenu} from "react-icons/bi"
 import {AiOutlineClose} from "react-icons/ai"
 
 import { useState } from "react";
+import SearchBox from "./SearchBox";
+import Link from "next/link";
 
 
 export default function () {
@@ -15,6 +17,7 @@ export default function () {
     };
   return (
     <div className="flex justify-around items-center py-10 bg-black">
+      <Link href={"/"}>
       <div className="flex gap-8">
         <div className="w-10 h-10 bg-[#BE123C] text-white rounded-full flex items-center justify-center">
           <MdOutlineOndemandVideo size={20} />
@@ -23,6 +26,7 @@ export default function () {
           Movie Box
         </h3>
       </div>
+      </Link>
 
         {/* Mobile Menu Toggle Button */}
         {/* <div className="md:hidden">
@@ -46,8 +50,9 @@ export default function () {
         </div> */}
 
       <div class="relative w-[526px] hidden md:flex">
-        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+        {/* <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
           <MdOutlineSearch className="w-6 h-6 text-gray-500" />
+         
         </div>
         <input
           type="search"
@@ -55,7 +60,8 @@ export default function () {
           class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-red focus:border-red "
           placeholder="What do you want to watch?"
           required
-        />
+        /> */}
+          <SearchBox/>
       </div>
       <div className="hidden gap-8 md:flex">
         <h3 className="text-white text-[24px] font-bold break-words">
