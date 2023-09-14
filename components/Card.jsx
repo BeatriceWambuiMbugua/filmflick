@@ -36,7 +36,8 @@ export default function Card({ movie }) {
               {movie.title || movie.name}
             </h2>
             <p className="flex items-center" data-testid="movie-release-date">
-              {movie.release_date} <FaRegThumbsUp className="h-5 mr-1 ml-3" />{" "}
+              {movie.release_date} 
+              <FaRegThumbsUp className="h-5 mr-1 ml-3" />{" "}
               {movie.vote_count}
             </p>
           </div>
