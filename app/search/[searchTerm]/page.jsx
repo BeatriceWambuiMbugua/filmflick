@@ -1,3 +1,4 @@
+import HeroSection from '@/components/HeroSection';
 import Results from '@/components/Results';
 import React from 'react'
 
@@ -13,6 +14,7 @@ export default async function SearchPage({params}) {
         const results = data.results;
   return (
 		<div>
+			 <HeroSection/>
 			{results && results.length === 0 && (
 				<h1 className="text-center pt-6">No results found</h1>
 			)}
