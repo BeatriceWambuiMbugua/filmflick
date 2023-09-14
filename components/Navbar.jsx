@@ -50,17 +50,6 @@ export default function () {
         </div> */}
 
       <div class="relative w-[526px] hidden md:flex">
-        {/* <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-          <MdOutlineSearch className="w-6 h-6 text-gray-500" />
-         
-        </div>
-        <input
-          type="search"
-          id="default-search"
-          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-red focus:border-red "
-          placeholder="What do you want to watch?"
-          required
-        /> */}
           <SearchBox/>
       </div>
       <div className="hidden gap-8 md:flex">
